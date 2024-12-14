@@ -1,1 +1,1 @@
-Configuration properties file can add to the project
+--Configuration properties file can add to the project

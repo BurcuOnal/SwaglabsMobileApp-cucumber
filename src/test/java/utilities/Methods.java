@@ -1,6 +1,5 @@
-package com.swagLabs;
+package utilities;
 
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -15,12 +14,12 @@ public class Methods {
 
 
 
-    public WebElement waitForElement(By locator) {
+    public static WebElement waitForElement(By locator) {
         WebDriverWait wait = new WebDriverWait(appiumDriver, Duration.ofMillis(30));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public void click(By locator) {
+    public static void click(By locator) {
         waitForElement(locator).click();
     }
 
